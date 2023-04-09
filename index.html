@@ -17,12 +17,30 @@
     <section id="panel">
         <h2>
             <ul>
-                <li>Calendario</li>
-                <li>Hora</li>
+                <li>
+                    <div class="app-wrap">
+                    <header>
+                        <button id="refresh"><img src="./570-5706067_update-reload-refresh-refresh-png-icon-transparent-png.png" height="15px" width="15px" alt="" srcset="" title="Refrescar Clima"></button>
+                      <input type="text" autocomplete="off" id="search-box" placeholder="Ingrese una ciudad..." />
+                    </header>
+                    <main>
+                      <section id="location">
+                        <div id="city"></div>
+                        <div id="date"></div>
+                      </section>
+                      <div id="current">
+                        <div id="temp"><span></span></div>
+                        <div id="weather"></div>
+                        <div id="hi-low"></div>
+                      </div>
+                    </main>
+                  </div>
+                </li>
+                <li id="time"></li>
             </ul>
             
             <ul>
-                <li><input type="text" id="enter"></li>
+                <li><input type="text" id="enter" placeholder="Ingrese una tarea"></li>
                 <li><button id="sendTask">Nueva Tarea</button></li>
             </ul>
         </h2>
@@ -31,11 +49,13 @@
     <section id="tareas">
         <div >
             <ol id="listTask">
-                <li><input type="checkbox">Buscar Ropa</li>
+                <li id ="task"><input type="checkbox">Buscar Ropa</li>
                 <li><input type="checkbox">Comprar articulos de hijiene</button></li> 
             </ol>
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./main.js"></script>
 </body>
 
